@@ -19,7 +19,10 @@
   AjaxZip3.zip2addr(this,'','building[prefecture_id]','building[city]'); 
   -->
 
-  <!-- There are now 2 functions being invoked onKeyUp (Execute a JavaScript when a user releases a key) -->
+  <!--
+  There are now 2 functions being invoked onKeyUp (Execute a JavaScript when a user releases a key).
+  Therefore, each time a full-width romaji digit is entered, it is directly converted to normal one.
+  -->
   <input onKeyUp="convert('building_zip');AjaxZip3.zip2addr('building[zip]','','building[prefecture_id]','building[city]');" type="text" name="building[zip]" id="building_zip"/>
   </div>
 
