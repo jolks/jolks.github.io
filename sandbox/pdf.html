@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <title>pdfmake Example</title>
+  <!-- Source: https://github.com/bpampuch/pdfmake -->
+  <script src='assets/pdfmake.js'></script>
+  <script src='assets/vfs_fonts.js'></script>
+</head>
+<body>
+  <script>
+    var docDefinition = {
+      content: [
+        {
+          table: {
+            // headers are automatically repeated if the table spans over multiple pages
+            // you can declare how many rows should be treated as headers
+            headerRows: 1,
+            widths: [ '*', 'auto', 100, '*' ],
+
+            body: [
+              [ 'First', 'Second', 'Third', 'The last one' ],
+              [ 'Value 1', 'Value 2', 'Value 3', 'Value 4' ],
+              [ { text: 'Bold value', bold: true }, 'Val 2', 'Val 3', 'Val 4' ]
+            ]
+          }
+        }
+      ]
+    };
+  </script>
+  
+  <!-- Works on Chrome, Firefox, and Safari -->
+  <button type="button" onclick="pdfMake.createPdf(docDefinition).open();">Get PDF</button>
+
+  <!-- Works on Chrome and Firefox only -->
+  <button type="button" onclick="pdfMake.createPdf(docDefinition).download();">Download PDF</button>
+</body>
+</html>
