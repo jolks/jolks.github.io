@@ -2,7 +2,7 @@
 <html>
 
   <!-- Take photo from camera on iOS and Android -->
-  <!-- On computer, it will upload image file -->
+  <!-- On computer, it will just be plain image file upload -->
   <!--
       Sources:-
       http://stackoverflow.com/questions/6336641/html5-camera-access-through-browser-in-ios
@@ -39,13 +39,15 @@
   </head>
 
   <body>
-
+    <!-- Access camera here -->
     <input type="file" capture="camera" accept="image/*" id="takePictureField">
 
+    <!-- After photo is snapped, photo is displayed here -->
     <img id="yourimage">
 
     <script>
-  var desiredWidth;
+
+    var desiredWidth;
 
     $(document).ready(function() {
       console.log('onReady');
