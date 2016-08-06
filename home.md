@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8"/>
-  <title>John Lau</title>
-</head>
-<!-- xmp content must not be indented -->
-<xmp theme="simplex" style="display:none;">
 I am a full-stack software engineer who is currently based in Tokyo, Japan.
 
 ### Online Presence
@@ -15,10 +7,6 @@ I am a full-stack software engineer who is currently based in Tokyo, Japan.
 * [Slideshare](http://www.slideshare.net/johnlaukahsoon) - Presentation slides for international conferences.
 * [Linkedin](https://www.linkedin.com/in/johnlaukahsoon) - Work history.
 
-### When away from computers
+### When away from computers :stuck_out_tongue_closed_eyes:
 * Martial arts training. Currently active in [Yagyu Shinkageryu, 柳生新陰流](https://en.wikipedia.org/wiki/Yagy%C5%AB_Shinkage-ry%C5%AB).
 * Salsa dancing. Team performance in DWF'14. Video available [here](https://www.youtube.com/watch?v=11tu9IOrhYs).
-</xmp>
-<script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
-<script src="src/ga.js"></script>
-</html>
