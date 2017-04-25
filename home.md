@@ -1,4 +1,4 @@
-I am a full-stack software engineer who is currently based in Tokyo, Japan.
+Full-stack software engineer experienced in research and hardware design who is currently based in Tokyo, Japan.
 
 ### Activities
 * [Github](https://github.com/jolks) - Crafting source code.
