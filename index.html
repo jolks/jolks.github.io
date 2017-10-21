@@ -62,8 +62,13 @@ Full-stack software engineer experienced in research and hardware design who is 
   xhr.onload = function() {
     // Success code goes here.
     var resp = JSON.parse(xhr.responseText);
+    var useragent = window.navigator.userAgent;
+    // window.navigator.userLanguage is for IE browser
+    var language = window.navigator.userLanguage || window.navigator.language;
     mixpanel.track("Homepage", {
-      "userip": resp.ip
+      "userip": resp.ip,
+      "useragent": useragent,
+      "language": language 
     });
   };
 
