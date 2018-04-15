@@ -1,5 +1,16 @@
 ## jolks.github.io
-* sandbox - contains misc test code.
+* `sandbox` - contains misc test code.
+* `md` - contains markdown files for [laujohn.com](http://laujohn.com).
+
+### To develop and deploy
+```
+# Run static files development server at http://localhost:8080.
+# Reload page after site:build script.
+$ npm run site:dev
+
+# On separate terminal, build and copy.
+$ npm run site:build
+```
 
 Description | URL
 ------------ | -------------

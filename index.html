@@ -1,81 +1,25 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="My full English name is John Lau Kah Soon (Eastern order) or John Kah Soon Lau (Western order). My surname is Lau (刘). My chinese name is 刘嘉顺 (劉嘉順). Full-stack software engineer experienced in research and hardware design">
-  <meta property="og:title" content="John Lau Kah Soon" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://laujohn.com" />
-  <meta property="og:image" content="https://avatars1.githubusercontent.com/u/765292" />
-  <meta name="p:domain_verify" content="aca9ccfd79004b1eb58c2f92f677e08d"/>
-  <title>John Lau</title>
-  <!-- start Mixpanel --><script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
-0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
-for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
-mixpanel.init("35a63367c4fab134971dd8d4a4a28bba");</script><!-- end Mixpanel -->
-</head>
-<!-- xmp content must not be indented -->
-<xmp theme="simplex" style="display:none;">
-Full-stack software engineer experienced in research and hardware design who is currently based in Tokyo, Japan.
-
-### Activities
-* [Github](https://github.com/jolks) - Crafting source code.
-* [Google Scholar](https://scholar.google.com/citations?user=TCR-CQYAAAAJ&hl=en) - Refereed technical publications.
-* [Wikipedia Contributions](https://en.wikipedia.org/wiki/Special:Contributions/J.K.S.Lau) - Editing articles.
-* [Slideshare](http://www.slideshare.net/johnlaukahsoon) - Presentation slides for international conferences.
-* [Linkedin](https://www.linkedin.com/in/johnlaukahsoon) - Work history.
-
-### When away from computers
-* Martial arts training. Currently active in [Yagyu Shinkageryu, 柳生新陰流](https://en.wikipedia.org/wiki/Yagy%C5%AB_Shinkage-ry%C5%AB).
-* Salsa dancing. Team performance in DWF'14. Video available [here](https://www.youtube.com/watch?v=11tu9IOrhYs).
-</xmp>
-<script src="lib/strapdown-0.2.js"></script>
-<script src="lib/ga.js"></script>
-<script type="text/javascript">
-  /*
-  Sources:-
-  http://www.test-cors.org/
-  https://jsonip.com/
-  */
-  var createCORSRequest = function(method, url) {
-    var xhr = new XMLHttpRequest();
-    if ("withCredentials" in xhr) {
-      // Most browsers.
-      xhr.open(method, url, true);
-    } else if (typeof XDomainRequest != "undefined") {
-      // IE8 & IE9
-      xhr = new XDomainRequest();
-      xhr.open(method, url);
-    } else {
-      // CORS not supported.
-      xhr = null;
-    }
-    return xhr;
-  };
-
-  var url = 'https://jsonip.com/';
-  var method = 'GET';
-  var xhr = createCORSRequest(method, url);
-
-  xhr.onload = function() {
-    // Success code goes here.
-    var resp = JSON.parse(xhr.responseText);
-    var useragent = window.navigator.userAgent;
-    // window.navigator.userLanguage is for IE browser
-    var language = window.navigator.userLanguage || window.navigator.language;
-    mixpanel.track("Homepage", {
-      "userip": resp.ip,
-      "useragent": useragent,
-      "language": language 
-    });
-  };
-
-  xhr.onerror = function() {
-    // Error code goes here.
-  };
-
-  xhr.send();
-</script>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>John Lau</title>
+    <meta name="description" content="My full English name is John Lau Kah Soon (Eastern order) or John Kah Soon Lau (Western order). My surname is Lau (刘). My chinese name is 刘嘉顺 (劉嘉順). Full-stack software engineer experienced in research and hardware design">
+  <meta property="og:title" content="John Lau Kah Soon">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://laujohn.com">
+  <meta property="og:image" content="https://avatars1.githubusercontent.com/u/765292">
+  <meta property="p:domain_verify" content="aca9ccfd79004b1eb58c2f92f677e08d">
+  <script src="lib/ga.js"></script>
+  <script src="lib/mp.js"></script>
+    
+    <link rel="preload" href="/assets/css/1.styles.924635ae.css" as="style"><link rel="preload" href="/assets/js/app.a079438d.js" as="script"><link rel="preload" href="/assets/js/0.56b25434.js" as="script">
+    <link rel="stylesheet" href="/assets/css/1.styles.924635ae.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="router-link-exact-active router-link-active"><!----><span class="site-name">
+      John Lau
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><!----></div></header><div class="sidebar"><!----><ul class="sidebar-links"><li><a href="/" class="active sidebar-link">/</a><ul class="sidebar-sub-headers"></ul></li></ul></div><div class="page"><div class="content"><p>Full-stack software engineer experienced in research and hardware design who is currently based in Tokyo, Japan.</p><h3 id="activities"><a href="#activities" aria-hidden="true" class="header-anchor">#</a> Activities</h3><ul><li><a href="https://github.com/jolks" target="_blank" rel="noopener noreferrer">Github</a> - Crafting source code.</li><li><a href="https://scholar.google.com/citations?user=TCR-CQYAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a> - Refereed technical publications.</li><li><a href="https://en.wikipedia.org/wiki/Special:Contributions/J.K.S.Lau" target="_blank" rel="noopener noreferrer">Wikipedia Contributions</a> - Editing articles.</li><li><a href="http://www.slideshare.net/johnlaukahsoon" target="_blank" rel="noopener noreferrer">Slideshare</a> - Presentation slides for international conferences.</li><li><a href="https://www.linkedin.com/in/johnlaukahsoon" target="_blank" rel="noopener noreferrer">Linkedin</a> - Work history.</li></ul><h3 id="when-away-from-computers"><a href="#when-away-from-computers" aria-hidden="true" class="header-anchor">#</a> When away from computers</h3><ul><li>Martial arts training. Currently active in <a href="https://en.wikipedia.org/wiki/Yagy%C5%AB_Shinkage-ry%C5%AB" target="_blank" rel="noopener noreferrer">Yagyu Shinkageryu, 柳生新陰流</a>.</li><li>Salsa dancing. Team performance in DWF’14. Video available <a href="https://www.youtube.com/watch?v=11tu9IOrhYs" target="_blank" rel="noopener noreferrer">here</a>.</li></ul></div><!----><!----></div></div></div>
+    <script src="/assets/js/0.56b25434.js" defer></script><script src="/assets/js/app.a079438d.js" defer></script>
+  </body>
 </html>

@@ -1,0 +1,26 @@
+{
+  "name": "jolks.github.io",
+  "version": "1.0.0",
+  "description": "* sandbox - contains misc test code.",
+  "main": "index.html",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {
+    "vuepress": "^0.3.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "site:build": "vuepress build md && cp -rf ./md/.vuepress/dist/* .",
+    "site:dev": "vuepress dev md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jolks/jolks.github.io.git"
+  },
+  "author": "John Lau",
+  "bugs": {
+    "url": "https://github.com/jolks/jolks.github.io/issues"
+  },
+  "homepage": "https://github.com/jolks/jolks.github.io#readme"
+}
