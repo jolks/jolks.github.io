@@ -8,5 +8,5 @@ Full-stack software engineer experienced in research and hardware design who is 
 * [Linkedin](https://www.linkedin.com/in/johnlaukahsoon) - Work history.
 
 ### When away from computers
-* Martial arts training. Currently active in [Yagyu Shinkageryu, 柳生新陰流](https://en.wikipedia.org/wiki/Yagy%C5%AB_Shinkage-ry%C5%AB).
+* Martial arts training. Currently active in [Yagyu Shinkageryu, 柳生新陰流](https://en.wikipedia.org/wiki/Yagy%C5%AB_Shinkage-ry%C5%AB) and Kickboxing.
 * Salsa dancing. Team performance in DWF'14. Video available [here](https://www.youtube.com/watch?v=11tu9IOrhYs).
