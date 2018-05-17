@@ -22,6 +22,10 @@ module.exports = {
             property: 'p:domain_verify',
             content: 'aca9ccfd79004b1eb58c2f92f677e08d'
         }],
+        ['meta', {
+            name: 'abuseipdb-verification',
+            content: 'WVuKSDZv'
+        }],
         ['script', { src: 'lib/ga.js' }],
         ['script', { src: 'lib/mp.js' }]
     ]
