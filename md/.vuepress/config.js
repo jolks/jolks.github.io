@@ -27,6 +27,7 @@ module.exports = {
             content: 'WVuKSDZv'
         }],
         ['script', { src: 'lib/ga.js' }],
-        ['script', { src: 'lib/mp.js' }]
+        ['script', { src: 'lib/mp.js' }],
+        ['script', { src: 'lib/insp.js' }]
     ]
 }
