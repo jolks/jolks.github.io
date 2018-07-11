@@ -1,4 +1,8 @@
-Full-stack software engineer experienced in research and hardware design who is currently based in Tokyo, Japan.
+Full-stack software engineer experienced in research and hardware design based in Tokyo, Japan.
+
+Currently working on big data, machine learning and cybersecurity.
+
+Since March 2018, started to take an active role in product management.
 
 ### Activities
 * [Github](https://github.com/jolks) - Crafting source code.
