@@ -26,8 +26,18 @@ module.exports = {
             name: 'abuseipdb-verification',
             content: 'WVuKSDZv'
         }],
+        ['link', {
+            rel: 'icon',
+            type: 'image/x-icon',
+            href: 'md/static/favicon.ico'
+        }],
         ['script', { src: 'lib/ga.js' }],
         ['script', { src: 'lib/mp.js' }],
         ['script', { src: 'lib/insp.js' }]
-    ]
+    ],
+    themeConfig: {
+        nav: [
+            { text: 'Blog', link: '/blog/'}
+        ]
+    }
 }
