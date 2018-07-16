@@ -7,11 +7,11 @@
     "lib": "lib"
   },
   "devDependencies": {
-    "vuepress": "^0.3.1"
+    "vuepress": "^0.12.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "site:build": "vuepress build md && cp -rf ./md/.vuepress/dist/* .",
+    "site:build": "(bash -c '[ -d assets ]' && rm -rf assets); vuepress build md && cp -rf ./md/.vuepress/dist/* .",
     "site:dev": "vuepress dev md"
   },
   "repository": {

@@ -6,7 +6,7 @@ Since March 2018, started to take an active role in product management.
 
 Email me at
 
-![Email](../assets/img/email.png)
+![Email](./static/email.png)
 
 ### Activities
 * [Github](https://github.com/jolks) - Crafting source code.
