@@ -1,9 +1,9 @@
 
-Full-stack software engineer experienced in research and hardware design based in Tokyo, Japan.
-
-Currently working on big data, machine learning and cybersecurity.
-
-Since March 2018, started to take an active role in product management.
+<dl>
+  <dt>Full-stack software engineer experienced in research and hardware design based in Tokyo, Japan.</dt>
+  <dd>Currently working on big data, machine learning and cybersecurity problems.</dd>
+  <dd>Since March 2018, started to take an active role in product management.</dd>
+</dl>
 
 Email me at
 
