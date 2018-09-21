@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Github",
+        "url": "https://github.com/jolks",
+        "desc": "Crafting source code."
+    },
+    {
+        "name": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=TCR-CQYAAAAJ&hl=en",
+        "desc": "Refereed technical publications."
+    },
+    {
+        "name": "Wikipedia Contributions",
+        "url": "https://en.wikipedia.org/wiki/Special:Contributions/J.K.S.Lau",
+        "desc": "Editing articles."
+    }
+]
