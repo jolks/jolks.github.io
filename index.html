@@ -1,28 +1,243 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
+<html lang=en>
+<head>
+    <!-- so meta -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>John Lau</title>
-    <meta name="description" content="My full English name is John Lau Kah Soon (Eastern order) or John Kah Soon Lau (Western order). My surname is Lau (刘). My chinese name is 刘嘉顺 (劉嘉順). Full-stack software engineer experienced in research and hardware design">
-    <meta property="og:title" content="John Lau Kah Soon">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="http://laujohn.com">
-  <meta property="og:image" content="https://avatars1.githubusercontent.com/u/765292">
-  <meta property="p:domain_verify" content="aca9ccfd79004b1eb58c2f92f677e08d">
-  <meta name="abuseipdb-verification" content="WVuKSDZv">
-  <link rel="icon" type="image/x-icon" href="md/static/favicon.ico">
-  <script src="lib/ga.js"></script>
-  <script src="lib/mp.js"></script>
-  <script src="lib/insp.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta property="p:domain_verify" content="aca9ccfd79004b1eb58c2f92f677e08d">
+    <meta name="abuseipdb-verification" content="WVuKSDZv">
+    <meta name="description" content="Full English name is John Lau Kah Soon (Eastern order) or John Kah Soon Lau (Western order). Surname is Lau (刘). Chinese name is 刘嘉顺 (劉嘉順).">
+<meta property="og:type" content="website">
+<meta property="og:title" content="John Lau">
+<meta property="og:url" content="https://laujohn.com/index.html">
+<meta property="og:site_name" content="John Lau">
+<meta property="og:description" content="Full English name is John Lau Kah Soon (Eastern order) or John Kah Soon Lau (Western order). Surname is Lau (刘). Chinese name is 刘嘉顺 (劉嘉順).">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="John Lau">
+<meta name="twitter:description" content="Full English name is John Lau Kah Soon (Eastern order) or John Kah Soon Lau (Western order). Surname is Lau (刘). Chinese name is 刘嘉顺 (劉嘉順).">
     
-    <link rel="preload" href="/assets/css/0.styles.137b8c9d.css" as="style"><link rel="preload" href="/assets/js/app.5d7b2989.js" as="script"><link rel="preload" href="/assets/js/1.51c1239b.js" as="script"><link rel="prefetch" href="/assets/js/2.4aa06b61.js"><link rel="prefetch" href="/assets/js/3.32faf43d.js">
-    <link rel="stylesheet" href="/assets/css/0.styles.137b8c9d.css">
-  </head>
-  <body>
-    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-exact-active router-link-active"><!----><span class="site-name">
-      John Lau
-    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">Blog</a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">Blog</a></div><!----></nav><!----></div><div class="page"><div class="content"><dl><dt>Full-stack software engineer experienced in research and hardware design based in Tokyo, Japan.</dt><dd>Currently working on big data, machine learning and cybersecurity problems.</dd><dd>Since March 2018, started to take an active role in product management.</dd></dl><p>Email me at</p><p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAAATBAMAAACem9kJAAAAG1BMVEX///8AAACfn58fHx8/Pz/f39+/v79/f39fX18Vhw8RAAABmUlEQVQ4jdWTTU/CQBCG31lo63HLh/FYUkw4ipENRwRFj6sYvTZBjUcIYDxijOFvu7NbW6omohyMk0zTPuR9mO1ugX9Sk+wuMO2/hN0ElDFau25Qcj3oDRa4PP8U/p1sxHMGyx/J4prGbTVBpV2hUAbtPc0oDLEyeIw+gZlRSIJ/rEBxGHEXosoBX4mer3yFmm6Yyeb6ZsnIBA+E8k/QJMucbJyMEzoVkrsQnVqAcmS7hV2zAImOCTEi7ExGGg8YkWVO1odYUmLuEn4ja9ELC1DSJqkxMg8sw/1MWmR+WPGmElnmZHV4B5SqP0StjFxTKht396VDdqJLnixl0v6ZzGWFaDZZKZ/sEF46mY0+4oksc4rOp8lKhcnKiV14M5VJCMmIlzmEV/c6ZJnZEPfOermsELUyv5NuCROlz3QsGZXugijWcT2OCMwounrfzUxWiLozOjOHJa4mlkzlVXUoGQWh1xPt1+ehocxEqIxCtBUymSxE1w78V9XUfG1tePa/KbG3j+t5/u2jsYUMN4PwaJE/7lS2kf1pvQE5CEQFF9MEnQAAAABJRU5ErkJggg==" alt="Email"></p><h3 id="activities"><a href="#activities" aria-hidden="true" class="header-anchor">#</a> Activities</h3><ul><li><a href="https://github.com/jolks" target="_blank" rel="noopener noreferrer">Github<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> - Crafting source code.</li><li><a href="https://scholar.google.com/citations?user=TCR-CQYAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> - Refereed technical publications.</li><li><a href="https://en.wikipedia.org/wiki/Special:Contributions/J.K.S.Lau" target="_blank" rel="noopener noreferrer">Wikipedia Contributions<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> - Editing articles.</li><li><a href="http://www.slideshare.net/johnlaukahsoon" target="_blank" rel="noopener noreferrer">Slideshare<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> - Presentation slides for international conferences.</li><li><a href="https://www.linkedin.com/in/johnlaukahsoon" target="_blank" rel="noopener noreferrer">Linkedin<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> - Work history.</li></ul><h3 id="when-away-from-computers"><a href="#when-away-from-computers" aria-hidden="true" class="header-anchor">#</a> When away from computers</h3><ul><li>Martial arts training. Currently active in <a href="https://en.wikipedia.org/wiki/Yagy%C5%AB_Shinkage-ry%C5%AB" target="_blank" rel="noopener noreferrer">Yagyu Shinkageryu, 柳生新陰流<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> and Kickboxing.</li><li>Salsa dancing. Team performance in DWF'14. Video available <a href="https://www.youtube.com/watch?v=11tu9IOrhYs" target="_blank" rel="noopener noreferrer">here<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>.</li></ul></div><div class="page-edit"><!----><!----></div><!----></div></div></div>
-    <script src="/assets/js/1.51c1239b.js" defer></script><script src="/assets/js/app.5d7b2989.js" defer></script>
-  </body>
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>John Lau</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+    <div class="content index my4">
+        
+          <header id="header">
+  <a href="/">
+  
+    
+      <div id="logo" style="background-image: url(/images/logo.png);"></div>
+    
+  
+    <div id="title">
+      <h1>John Lau</h1>
+    </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+       
+        <li><a href="/">Home</a></li>
+       
+        <li><a href="/archives/">Blog</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+        
+        <section id="about">
+  
+    <p>Full-stack software engineer experienced in research and hardware design based in Tokyo, Japan.<br>Currently working on big data, machine learning and cybersecurity problems.<br><br>Since March 2018, started to take an active role in product management.</p>
+
+  
+  
+    <p>
+      Find me on
+      
+      
+      
+        
+          <a class="icon" target="_blank" href="https://twitter.com/JohnKSLau">
+            <i class="fab fa-twitter"></i><!--
+      ---></a><!--
+    ---><!--
+    --->, 
+        
+      
+        
+          <a class="icon" target="_blank" href="https://www.facebook.com/johnlaukahsoon">
+            <i class="fab fa-facebook"></i><!--
+      ---></a><!--
+    ---><!--
+    ---> and 
+        
+      
+        
+          <a class="icon" target="_blank" href="https://www.linkedin.com/in/johnlaukahsoon">
+            <i class="fab fa-linkedin"></i><!--
+      ---></a><!--
+    ---><!--
+    --->.
+        
+      
+    </p>
+  
+  Email me at<br>
+  <img src="/images/email.png">
+  <p>
+  <i>Views are my own and do not reflect the opinions of my employer.</i>
+  </p>
+</section>
+
+
+  <section id="projects">
+    <span class="h1">Projects</span>
+    <ul class="project-list">
+      
+        <li class="project-item">
+          <a target="_blank" href="https://github.com/jolks">Github</a>: <p>Crafting source code.</p>
+
+        </li>
+      
+        <li class="project-item">
+          <a target="_blank" href="https://scholar.google.com/citations?user=TCR-CQYAAAAJ&amp;hl=en">Google Scholar</a>: <p>Refereed technical publications.</p>
+
+        </li>
+      
+        <li class="project-item">
+          <a target="_blank" href="https://en.wikipedia.org/wiki/Special:Contributions/J.K.S.Lau">Wikipedia Contributions</a>: <p>Editing articles.</p>
+
+        </li>
+      
+    </ul>
+  </section>
+
+
+<section>
+  <span class="h1">When away from computers</span>
+  <ul class="project-list">
+    <li class="project-item">
+        Martial arts training. Currently active in <a target="_blank" href="https://en.wikipedia.org/wiki/Yagy%C5%AB_Shinkage-ry%C5%AB">Yagyu Shinkageryu, 柳生新陰流</a> and Kickboxing.
+    </li>
+    <li class="project-item">
+        Salsa dancing. Team performance in DWF'14. Video available <a target="_blank" href="https://www.youtube.com/watch?v=11tu9IOrhYs">here</a>.
+    </li>
+  </ul>
+</section>
+
+<section id="writing">
+  <span class="h1"><a href="/archives">Blog</a></span>
+  
+  <ul class="post-list">
+    
+      
+    
+    
+      <li class="post-item">
+        
+    <div class="meta">
+        <time datetime="2018-09-22T11:19:46.000Z" itemprop="datePublished">2018-09-22</time>
+    </div>
+
+
+        <span>
+    
+        <a class="" href="/2018/09/22/Apache-Spark-Web-UI-on-Amazon-EMR/">Apache Spark Web UI on Amazon EMR</a>
+    
+
+
+</span>
+      </li>
+    
+  </ul>
+  
+</section>
+
+    </div>
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2018 John Lau
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>
 </html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'laujohn';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+
+<!-- My own scripts -->
+<script src="/js/misc/ga.js"></script>
+<script src="/js/misc/mp.js"></script>
+<script src="/js/misc/insp.js"></script>
+
