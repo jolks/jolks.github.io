@@ -61,7 +61,7 @@ At this point, we can roughly guess it is because of a reverse proxy due to the 
 
 Eventually this will lead us to `UIUtils.scala`. To match the Spark version that we are using, select `v2.3.1` tag.
 
-```scala UIUtils.uiRoot https://github.com/apache/spark/blob/v2.3.1/core/src/main/scala/org/apache/spark/ui/UIUtils.scala#L151-L179
+```scala UIUtils.scala https://github.com/apache/spark/blob/v2.3.1/core/src/main/scala/org/apache/spark/ui/UIUtils.scala#L151-L179
 // Yarn has to go through a proxy so the base uri is provided and has to be on all links
   def uiRoot: String = {
     // SPARK-11484 - Use the proxyBase set by the AM, if not found then use env.
