@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta property="p:domain_verify" content="aca9ccfd79004b1eb58c2f92f677e08d">
+    <meta name="abuseipdb-verification" content="WVuKSDZv">
+    <meta name="description" content="Google Colaboratory or in short, Colab provides sufficiently powerful platform to run machine learning projects on Jupyter Notebook. The best thing is we can use Nvidia Tesla K80 GPU for free! However">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Plot Keras Model in Colaboratory">
+<meta property="og:url" content="https://laujohn.com/2018/09/24/Plot-Keras-Model-in-Colaboratory/index.html">
+<meta property="og:site_name" content="John Lau">
+<meta property="og:description" content="Google Colaboratory or in short, Colab provides sufficiently powerful platform to run machine learning projects on Jupyter Notebook. The best thing is we can use Nvidia Tesla K80 GPU for free! However">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://laujohn.com/images/plot_keras_model.png">
+<meta property="og:updated_time" content="2018-09-24T07:36:50.394Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Plot Keras Model in Colaboratory">
+<meta name="twitter:description" content="Google Colaboratory or in short, Colab provides sufficiently powerful platform to run machine learning projects on Jupyter Notebook. The best thing is we can use Nvidia Tesla K80 GPU for free! However">
+<meta name="twitter:image" content="https://laujohn.com/images/plot_keras_model.png">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>Plot Keras Model in Colaboratory</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- persian styles -->
+    
+      <link rel="stylesheet" href="/css/rtl.css">
+    
+    <!-- rss -->
+    
+    
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        
+        <li><a class="icon" href="/2018/09/22/Apache-Spark-Web-UI-on-Amazon-EMR/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://laujohn.com/2018/09/24/Plot-Keras-Model-in-Colaboratory/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://laujohn.com/2018/09/24/Plot-Keras-Model-in-Colaboratory/&text=Plot Keras Model in Colaboratory"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://laujohn.com/2018/09/24/Plot-Keras-Model-in-Colaboratory/&title=Plot Keras Model in Colaboratory"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://laujohn.com/2018/09/24/Plot-Keras-Model-in-Colaboratory/&is_video=false&description=Plot Keras Model in Colaboratory"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Plot Keras Model in Colaboratory&body=Check out this article: https://laujohn.com/2018/09/24/Plot-Keras-Model-in-Colaboratory/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://laujohn.com/2018/09/24/Plot-Keras-Model-in-Colaboratory/&title=Plot Keras Model in Colaboratory"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://laujohn.com/2018/09/24/Plot-Keras-Model-in-Colaboratory/&title=Plot Keras Model in Colaboratory"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://laujohn.com/2018/09/24/Plot-Keras-Model-in-Colaboratory/&title=Plot Keras Model in Colaboratory"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://laujohn.com/2018/09/24/Plot-Keras-Model-in-Colaboratory/&title=Plot Keras Model in Colaboratory"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://laujohn.com/2018/09/24/Plot-Keras-Model-in-Colaboratory/&name=Plot Keras Model in Colaboratory&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Plot Keras Model in Colaboratory
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">John Lau</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2018-09-24T05:57:32.000Z" itemprop="datePublished">2018-09-24</time>
+    </div>
+
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>Google Colaboratory or in short, Colab provides sufficiently powerful platform to run machine learning projects on Jupyter Notebook. The best thing is we can use Nvidia Tesla K80 GPU for free! However there are some <a href="https://research.google.com/colaboratory/faq.html" target="_blank" rel="noopener">caveats</a>.</p>
+<p>Just upload a notebook to Google Drive and open it with Colaboratory, yes, as simple as that. We can also create new notebook at <a href="https://colab.research.google.com/notebooks/welcome.ipynb" target="_blank" rel="noopener">here</a>, which will be saved inside Google Drive <code>Colab Notebooks</code> folder.</p>
+<p>As of the date of this post, one cannot plot deep learning model via <a href="https://keras.io/" target="_blank" rel="noopener">Keras</a> directly even though Keras is installed by default on Colab.</p>
+<blockquote><p>ImportError: Failed to import <code>pydot</code>. Please install <code>pydot</code>. For example with <code>pip install pydot</code>.</p>
+<p>NOTE: If your import is failing due to a missing package, you can<br>manually install dependencies using either !pip or !apt.</p>
+<p>To view examples of installing some common dependencies, click the<br>“Open Examples” button below.</p>
+</blockquote>
+<p>The errors encountered and steps taken towards solution can be seen in <a href="https://colab.research.google.com/drive/1n2HJw3zcZRqWdbXPwC_lkajJ7XRgquFC" target="_blank" rel="noopener">Plot Keras Model in Colab Error Reproduced.ipynb</a> notebook.</p>
+<p>Looking at just the solution:<br><figure class="highlight python"><figcaption><span>Plot Keras Model in Colab.ipynb</span><a href="https://colab.research.google.com/drive/1tjGn34WUJIf5lMdwmxxhkL2NcHIBWuiN" target="_blank" rel="noopener">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Install dependencies</span></span><br><span class="line">!apt install graphviz</span><br><span class="line">!pip install pydot pydot-ng</span><br><span class="line">!echo <span class="string">"Double check with Python 3"</span></span><br><span class="line">!python -c <span class="string">"import pydot"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Restart runtime to allow Jupyter to know the changes above</span></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line">os._exit(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> keras.models <span class="keyword">import</span> Model</span><br><span class="line"><span class="keyword">from</span> keras.layers <span class="keyword">import</span> Input, Dense</span><br><span class="line"><span class="keyword">from</span> keras.utils <span class="keyword">import</span> plot_model</span><br><span class="line"></span><br><span class="line"><span class="comment"># Multi-layer neural networks</span></span><br><span class="line">inputs = Input(shape=(<span class="number">10</span>,))</span><br><span class="line">hidden1 = Dense(<span class="number">10</span>, activation=<span class="string">'relu'</span>)(inputs)</span><br><span class="line">hidden2 = Dense(<span class="number">30</span>, activation=<span class="string">'relu'</span>)(hidden1)</span><br><span class="line">hidden3 = Dense(<span class="number">10</span>, activation=<span class="string">'relu'</span>)(hidden2)</span><br><span class="line">output = Dense(<span class="number">1</span>, activation=<span class="string">'sigmoid'</span>)(hidden3)</span><br><span class="line">model = Model(inputs=inputs, outputs=output)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Model summary</span></span><br><span class="line">print(model.summary())</span><br><span class="line"></span><br><span class="line"><span class="comment"># Plot model graph</span></span><br><span class="line">plot_model(model, show_shapes=<span class="keyword">True</span>, show_layer_names=<span class="keyword">True</span>, to_file=<span class="string">'model.png'</span>)</span><br><span class="line"><span class="keyword">from</span> IPython.display <span class="keyword">import</span> Image</span><br><span class="line">Image(retina=<span class="keyword">True</span>, filename=<span class="string">'model.png'</span>)</span><br></pre></td></tr></table></figure></p>
+<p><img src="/images/plot_keras_model.png" alt="Keras model graph plot sample"></p>
+
+  </div>
+</article>
+
+    <div class="blog-post-comments">
+        <div id="disqus_thread">
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+        </div>
+    </div>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://laujohn.com/2018/09/24/Plot-Keras-Model-in-Colaboratory/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://laujohn.com/2018/09/24/Plot-Keras-Model-in-Colaboratory/&text=Plot Keras Model in Colaboratory"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://laujohn.com/2018/09/24/Plot-Keras-Model-in-Colaboratory/&title=Plot Keras Model in Colaboratory"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://laujohn.com/2018/09/24/Plot-Keras-Model-in-Colaboratory/&is_video=false&description=Plot Keras Model in Colaboratory"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Plot Keras Model in Colaboratory&body=Check out this article: https://laujohn.com/2018/09/24/Plot-Keras-Model-in-Colaboratory/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://laujohn.com/2018/09/24/Plot-Keras-Model-in-Colaboratory/&title=Plot Keras Model in Colaboratory"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://laujohn.com/2018/09/24/Plot-Keras-Model-in-Colaboratory/&title=Plot Keras Model in Colaboratory"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://laujohn.com/2018/09/24/Plot-Keras-Model-in-Colaboratory/&title=Plot Keras Model in Colaboratory"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://laujohn.com/2018/09/24/Plot-Keras-Model-in-Colaboratory/&title=Plot Keras Model in Colaboratory"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://laujohn.com/2018/09/24/Plot-Keras-Model-in-Colaboratory/&name=Plot Keras Model in Colaboratory&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2018 John Lau
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Blog</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
+<!-- styles -->
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/justified-gallery/css/justifiedGallery.min.css">
+
+<!-- jquery -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/justified-gallery/js/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Disqus Comments -->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'laujohn';
+
+        (function(){
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        }());
+    </script>
+
+<!-- My own scripts -->
+<script src="/js/misc/ga.js"></script>
+<script src="/js/misc/mp.js"></script>
+<script src="/js/misc/insp.js"></script>
+
