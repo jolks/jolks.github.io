@@ -7,7 +7,7 @@ tags:
 
 Google Colaboratory or in short, Colab provides sufficiently powerful platform to run machine learning projects on Jupyter Notebook. The best thing is we can use Nvidia Tesla K80 GPU for free! However there are some [caveats](https://research.google.com/colaboratory/faq.html).
 
-Just upload a notebook to Google Drive and open it with Colaboratory, yes, as simple as that. We can also create new notebook at [here](https://colab.research.google.com/notebooks/welcome.ipynb), which will be saved inside Google Drive `Colab Notebooks` folder.
+Just upload a notebook to Google Drive and open it with Colaboratory, yes, as simple as that. We can also create new notebook at the [main page](https://colab.research.google.com/notebooks/welcome.ipynb), which will be saved inside Google Drive `Colab Notebooks` folder.
 
 As of the date of this post, one cannot plot deep learning model via [Keras](https://keras.io/) directly even though Keras is installed by default on Colab.
 
