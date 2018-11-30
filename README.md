@@ -2,6 +2,11 @@
 * `sandbox` - contains misc test code.
 * `.hexo` - directory to generate the static website.
 ```sh
+# Setup
+$ npm install
+$ cd .hexo
+$ npm install
+
 # To create new post
 $ ./node_modules/.bin/hexo --cwd .hexo new post "A New Post"
 # Start writing inside .hexo/source/_posts/A-New-Post.md file
@@ -9,6 +14,10 @@ $ ./node_modules/.bin/hexo --cwd .hexo new post "A New Post"
 # Run both on different screens
 $ npm run site:dev
 $ npm run site:generate:watch
+
+$ npm run site:clean
+$ npm run site:generate
+$ npm run site:deploy
 ```
 
 ### To develop and deploy

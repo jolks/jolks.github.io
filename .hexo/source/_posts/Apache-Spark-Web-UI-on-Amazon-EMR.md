@@ -4,6 +4,15 @@ cwd: .hexo
 date: 2018-09-22 20:19:46
 tags:
 ---
+
+
+<hr/>
+**Update (2018 November 30):** Starting from `emr-5.18.0`, we can access the Spark Web UI through Spark History Server > Show incomplete applications > Click an App ID. An URL example,
+
+http://ec2-54-64-51-35.ap-northeast-1.compute.amazonaws.com:18080/history/application_1543543990440_0001/jobs/
+<hr/>
+
+
 [Apache Spark](https://spark.apache.org/) is a fast and general engine for large-scale data processing.
 
 It has a [web UI](https://spark.apache.org/docs/latest/monitoring.html) that we can use to monitor each Spark job in detail. This is useful for debugging and optimization.
