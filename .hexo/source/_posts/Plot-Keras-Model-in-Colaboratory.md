@@ -23,6 +23,8 @@ To view examples of installing some common dependencies, click the
 
 The errors encountered and steps taken towards solution can be seen in [Plot Keras Model in Colab Error Reproduced.ipynb](https://colab.research.google.com/drive/1n2HJw3zcZRqWdbXPwC_lkajJ7XRgquFC) notebook.
 
+<a href="https://colab.research.google.com/drive/1n2HJw3zcZRqWdbXPwC_lkajJ7XRgquFC" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
 Looking at just the solution:
 ```python Plot Keras Model in Colab.ipynb https://colab.research.google.com/drive/1tjGn34WUJIf5lMdwmxxhkL2NcHIBWuiN
 # Install dependencies
