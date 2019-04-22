@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang=en>
-<head>
+<head><meta name="generator" content="Hexo 3.8.0">
     <!-- so meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta property="p:domain_verify" content="aca9ccfd79004b1eb58c2f92f677e08d">
     <meta name="abuseipdb-verification" content="WVuKSDZv">
-    <meta name="description" content="Google Colaboratory or in short, Colab provides sufficiently powerful platform to run machine learning projects on Jupyter Notebook. The best thing is we can use Nvidia Tesla K80 GPU for free! However">
+    <meta name="description" content="Google Colaboratory or in short, Colab provides sufficiently powerful platform to run machine learning projects on Jupyter Notebook. The best thing is we can use NVIDIA Tesla K80 GPU for free! However">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Plot Keras Model in Colaboratory">
 <meta property="og:url" content="https://laujohn.com/2018/09/24/Plot-Keras-Model-in-Colaboratory/index.html">
 <meta property="og:site_name" content="John Lau">
-<meta property="og:description" content="Google Colaboratory or in short, Colab provides sufficiently powerful platform to run machine learning projects on Jupyter Notebook. The best thing is we can use Nvidia Tesla K80 GPU for free! However">
+<meta property="og:description" content="Google Colaboratory or in short, Colab provides sufficiently powerful platform to run machine learning projects on Jupyter Notebook. The best thing is we can use NVIDIA Tesla K80 GPU for free! However">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://colab.research.google.com/assets/colab-badge.svg">
 <meta property="og:image" content="https://laujohn.com/images/plot_keras_model.png">
-<meta property="og:updated_time" content="2019-03-22T04:02:15.143Z">
+<meta property="og:updated_time" content="2019-04-22T11:34:39.882Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Plot Keras Model in Colaboratory">
-<meta name="twitter:description" content="Google Colaboratory or in short, Colab provides sufficiently powerful platform to run machine learning projects on Jupyter Notebook. The best thing is we can use Nvidia Tesla K80 GPU for free! However">
+<meta name="twitter:description" content="Google Colaboratory or in short, Colab provides sufficiently powerful platform to run machine learning projects on Jupyter Notebook. The best thing is we can use NVIDIA Tesla K80 GPU for free! However">
 <meta name="twitter:image" content="https://colab.research.google.com/assets/colab-badge.svg">
     
     
@@ -69,7 +69,7 @@
         
       </ul>
     </span>
-    <br/>
+    <br>
     <span id="actions">
       <ul>
         
@@ -84,7 +84,7 @@
       <span id="i-top" class="info" style="display:none;">Back to top</span>
       <span id="i-share" class="info" style="display:none;">Share post</span>
     </span>
-    <br/>
+    <br>
     <div id="share" style="display: none">
       <ul>
   <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://laujohn.com/2018/09/24/Plot-Keras-Model-in-Colaboratory/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
@@ -109,7 +109,7 @@
     
     <div class="content index my4">
         
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
   <header>
     
     <h1 class="posttitle" itemprop="name headline">
@@ -119,7 +119,7 @@
 
 
     <div class="meta">
-      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span class="author" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
         <span itemprop="name">John Lau</span>
       </span>
       
@@ -135,7 +135,10 @@
   
 
   <div class="content" itemprop="articleBody">
-    <p>Google Colaboratory or in short, Colab provides sufficiently powerful platform to run machine learning projects on Jupyter Notebook. The best thing is we can use Nvidia Tesla K80 GPU for free! However there are some <a href="https://research.google.com/colaboratory/faq.html" target="_blank" rel="noopener">caveats</a>.</p>
+    <p>Google Colaboratory or in short, Colab provides sufficiently powerful platform to run machine learning projects on Jupyter Notebook. The best thing is we can use NVIDIA Tesla K80 GPU for free! However there are some <a href="https://research.google.com/colaboratory/faq.html" target="_blank" rel="noopener">caveats</a>.</p>
+<p><hr><br><strong>Update (2019 April 22):</strong> NVIDIA Tesla T4 GPU is now available for free! It’s faster than K80.</p>
+<hr>
+
 <p>Just upload a notebook to Google Drive and open it with Colaboratory, yes, as simple as that. We can also create new notebook at the <a href="https://colab.research.google.com/notebooks/welcome.ipynb" target="_blank" rel="noopener">main page</a>, which will be saved inside Google Drive <code>Colab Notebooks</code> folder.</p>
 <p>As of the date of this post, one cannot plot deep learning model via <a href="https://keras.io/" target="_blank" rel="noopener">Keras</a> directly even though Keras is installed by default on Colab.</p>
 <blockquote><p>ImportError: Failed to import <code>pydot</code>. Please install <code>pydot</code>. For example with <code>pip install pydot</code>.</p>
