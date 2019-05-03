@@ -7,8 +7,8 @@ title: John Lau
 subtitle:
 description: Full English name is John Lau Kah Soon (Eastern order) or John Kah Soon Lau (Western order). Surname is Lau (刘). Chinese name is 刘嘉顺 (劉嘉順).
 introduction: |
-  Full-stack software engineer experienced in research and hardware design based in Tokyo, Japan.
-  Currently working on big data, machine learning and cybersecurity problems.<br>
+  I have been working on full-stack engineering (ML/AI, cybersecurity, backend, infrastructure, and frontend) at startups. Started out as integrated circuit design engineer. Most startups were at seed-stage or pre-Series A stage which is well-known for its high degree of risk and uncertainty. Published peer-reviewed technical papers and participated in national research programme.
+  <br>
   Briefly worked on product management from March 2018 to November 2018.
 keywords:
 author: John Lau
@@ -81,7 +81,7 @@ theme: cactus
 
 # Overwrites .hexo/themes/<theme name>/_config.yml
 theme_config:
-  colorscheme: white
+  colorscheme: dark
   nav:
     Home: /
     Blog: /archives/

@@ -8,7 +8,7 @@ tags:
 Google Colaboratory or in short, Colab provides sufficiently powerful platform to run machine learning projects on Jupyter Notebook. The best thing is we can use NVIDIA Tesla K80 GPU for free! However there are some [caveats](https://research.google.com/colaboratory/faq.html).
 
 <hr/>
-**Update (2019 April 22):** NVIDIA Tesla T4 GPU is now available for free! It's faster than K80.
+**Update (2019 April 22):** NVIDIA Tesla T4 GPU is now available for free! It has much better performance than K80.
 <hr/>
 
 Just upload a notebook to Google Drive and open it with Colaboratory, yes, as simple as that. We can also create new notebook at the [main page](https://colab.research.google.com/notebooks/welcome.ipynb), which will be saved inside Google Drive `Colab Notebooks` folder.
