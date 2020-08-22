@@ -8,57 +8,14 @@ tags:
 Google Colaboratory or in short, Colab provides sufficiently powerful platform to run machine learning projects on Jupyter Notebook. The best thing is we can use NVIDIA Tesla K80 GPU for free! However there are some [caveats](https://research.google.com/colaboratory/faq.html).
 
 <hr/>
+
+**Update (2020 August 22):** The dependencies installation workaround is not required anymore.
+
 **Update (2019 April 22):** NVIDIA Tesla T4 GPU is now available for free! It has much better performance than K80.
+
 <hr/>
 
-Just upload a notebook to Google Drive and open it with Colaboratory, yes, as simple as that. We can also create new notebook at the [main page](https://colab.research.google.com/notebooks/welcome.ipynb), which will be saved inside Google Drive `Colab Notebooks` folder.
+To plot Keras model in Colab, refer to the sample code in the notebook shown below. You can save a copy of the notebook in your Google Drive and run it on Colab by clicking on the `Run on Colab` button.
 
-As of the date of this post, one cannot plot deep learning model via [Keras](https://keras.io/) directly even though Keras is installed by default on Colab.
+<iframe height="600" frameborder="0" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-modals allow-popups allow-scripts allow-same-origin" src="https://replab.io/notebooks/embed/jolks/6cfe2222663de46b9ac02cec3a647079bb3d5a9e"></iframe>
 
-{% blockquote %}
-ImportError: Failed to import `pydot`. Please install `pydot`. For example with `pip install pydot`.
-
-NOTE: If your import is failing due to a missing package, you can
-manually install dependencies using either !pip or !apt.
-
-To view examples of installing some common dependencies, click the
-"Open Examples" button below.
-{% endblockquote %}
-
-The errors encountered and steps taken towards solution can be seen in [Plot Keras Model in Colab Error Reproduced.ipynb](https://colab.research.google.com/drive/1n2HJw3zcZRqWdbXPwC_lkajJ7XRgquFC) notebook.
-
-<a href="https://colab.research.google.com/drive/1n2HJw3zcZRqWdbXPwC_lkajJ7XRgquFC" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
-Looking at just the solution:
-```python Plot Keras Model in Colab.ipynb https://colab.research.google.com/drive/1tjGn34WUJIf5lMdwmxxhkL2NcHIBWuiN
-# Install dependencies
-!apt install graphviz
-!pip install pydot pydot-ng
-!echo "Double check with Python 3"
-!python -c "import pydot"
-
-# Restart runtime to allow Jupyter to know the changes above
-import os
-os._exit(0)
-
-from keras.models import Model
-from keras.layers import Input, Dense
-from keras.utils import plot_model
-
-# Multi-layer neural networks
-inputs = Input(shape=(10,))
-hidden1 = Dense(10, activation='relu')(inputs)
-hidden2 = Dense(30, activation='relu')(hidden1)
-hidden3 = Dense(10, activation='relu')(hidden2)
-output = Dense(1, activation='sigmoid')(hidden3)
-model = Model(inputs=inputs, outputs=output)
-
-# Model summary
-print(model.summary())
-
-# Plot model graph
-plot_model(model, show_shapes=True, show_layer_names=True, to_file='model.png')
-from IPython.display import Image
-Image(retina=True, filename='model.png')
-```
-![Keras model graph plot sample](/images/plot_keras_model.png)
