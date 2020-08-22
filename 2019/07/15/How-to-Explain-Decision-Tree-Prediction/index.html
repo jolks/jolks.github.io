@@ -16,9 +16,8 @@
 <meta property="og:description" content="Decision Tree is a white box model because it is intuitive to interpret why the model gives output or prediction from the inputs. It is also a Symbolic AI method in which it provides “symbolic” (human">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://laujohn.com/images/decision_tree_model.png">
-<meta property="og:image" content="https://colab.research.google.com/assets/colab-badge.svg">
 <meta property="article:published_time" content="2019-07-15T05:15:06.000Z">
-<meta property="article:modified_time" content="2020-02-01T05:42:03.527Z">
+<meta property="article:modified_time" content="2020-08-22T09:46:09.500Z">
 <meta property="article:author" content="John Lau">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://laujohn.com/images/decision_tree_model.png">
@@ -173,8 +172,9 @@
 <p>In node #2, input value of 2.3 cm petal width results in <code>false</code> decision for the rule <code>petal width (cm) &lt;= 1.75</code>, which leads to node #12.</p>
 <p>In node #12, input value of 5.4 cm petal length results in <code>false</code> decision for the rule <code>petal length (cm) &lt;= 4.8500001430511475</code>, which leads to node #16.</p>
 <p>In node #16, there is no rule or decision criteria, it is the last node that gives the prediction result, <code>virginica</code>.</p>
-<p>The <a href="https://colab.research.google.com/drive/1wygq-8Qfhs5yHAPVtNh2jOydhlKOnZdF" target="_blank" rel="noopener">Colab notebook</a> demonstrates the implementation steps, you can click on the button below. Although the decision tree model may not remain the same, the prediction can always be explained.</p>
-<p><a href="https://colab.research.google.com/drive/1wygq-8Qfhs5yHAPVtNh2jOydhlKOnZdF" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
+<p>The notebook below demonstrates the implementation steps. Although the decision tree model may not remain the same, the prediction can always be explained.</p>
+<iframe height="600" frameborder="0" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-modals allow-popups allow-scripts allow-same-origin" src="https://replab.io/notebooks/embed/jolks/021b3f4f8430d694723e409ddd0a157652e33caf"></iframe>
+
 <h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><ol>
 <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html#sklearn.tree.DecisionTreeClassifier.decision_path" target="_blank" rel="noopener">https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html#sklearn.tree.DecisionTreeClassifier.decision_path</a></li>
 <li><a href="https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/tree/export.py" target="_blank" rel="noopener">https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/tree/export.py</a>. See <code>node_to_str</code> method.</li>
