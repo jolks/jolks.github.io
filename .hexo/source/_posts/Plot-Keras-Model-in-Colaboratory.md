@@ -17,5 +17,5 @@ Google Colaboratory or in short, Colab provides sufficiently powerful platform t
 
 To plot Keras model in Colab, refer to the sample code in the notebook shown below. You can save a copy of the notebook in your Google Drive and run it on Colab by clicking on the `Run on Colab` button.
 
-<iframe height="600" frameborder="0" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-modals allow-popups allow-scripts allow-same-origin" src="https://replab.io/notebooks/embed/jolks/6cfe2222663de46b9ac02cec3a647079bb3d5a9e"></iframe>
+<iframe height="600" frameborder="0" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-modals allow-popups allow-scripts allow-same-origin allow-top-navigation" src="https://replab.io/notebooks/embed/jolks/6cfe2222663de46b9ac02cec3a647079bb3d5a9e"></iframe>
 

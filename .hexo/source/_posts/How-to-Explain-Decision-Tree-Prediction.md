@@ -73,7 +73,7 @@ In node #16, there is no rule or decision criteria, it is the last node that giv
 
 The notebook below demonstrates the implementation steps. Although the decision tree model may not remain the same, the prediction can always be explained.
 
-<iframe height="600" frameborder="0" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-modals allow-popups allow-scripts allow-same-origin" src="https://replab.io/notebooks/embed/jolks/021b3f4f8430d694723e409ddd0a157652e33caf"></iframe>
+<iframe height="600" frameborder="0" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-modals allow-popups allow-scripts allow-same-origin allow-top-navigation" src="https://replab.io/notebooks/embed/jolks/021b3f4f8430d694723e409ddd0a157652e33caf"></iframe>
 
 # References
 1. https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html#sklearn.tree.DecisionTreeClassifier.decision_path
