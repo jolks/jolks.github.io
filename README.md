@@ -7,6 +7,10 @@ $ npm install
 $ cd .hexo
 $ npm install
 
+# Update (2023/04/05)
+# Not backward compatible with latest nodejs and npm
+$ nvm use v10.18.1
+
 # To create new post
 $ ./node_modules/.bin/hexo --cwd .hexo new post "A New Post"
 # Start writing inside .hexo/source/_posts/A-New-Post.md file
