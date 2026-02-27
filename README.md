@@ -1,30 +1,37 @@
 ## jolks.github.io
-* `sandbox` - contains misc test code.
-* `.hexo` - directory to generate the static website.
+
+Static personal site — pure HTML, CSS, and vanilla JS. No frameworks, no build step.
+
+### Structure
+* `index.html` — landing page
+* `post.html` — blog post template (renders Markdown client-side via [marked](https://github.com/markedjs/marked))
+* `posts/` — blog posts as Markdown files with YAML front matter
+* `css/style.css` — single stylesheet
+* `images/` — static assets
+* `sandbox/` — misc test code
+
+### Adding a new blog post
+1. Create `posts/my-new-post.md` with front matter:
+   ```
+   ---
+   title: My New Post
+   date: 2026-01-01
+   tags:
+   ---
+   Post content here...
+   ```
+2. Add an entry to `posts/posts.json` (newest-first):
+   ```json
+   { "slug": "my-new-post", "title": "My New Post", "date": "2026-01-01" }
+   ```
+
+### Local development
 ```sh
-# Setup
-$ npm install
-$ cd .hexo
-$ npm install
-
-# Update (2023/04/05)
-# Not backward compatible with latest nodejs and npm
-$ nvm use v10.18.1
-
-# To create new post
-$ ./node_modules/.bin/hexo --cwd .hexo new post "A New Post"
-# Start writing inside .hexo/source/_posts/A-New-Post.md file
-
-# Run both on different screens
-$ npm run site:dev
-$ npm run site:generate:watch
-
-$ npm run site:clean
-$ npm run site:generate
-$ npm run site:deploy
+python3 -m http.server
+# Open http://localhost:8000
 ```
 
-### To develop and deploy
+### Sandbox
 
 Description | URL
 ------------ | -------------
