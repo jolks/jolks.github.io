@@ -16,7 +16,6 @@ Static personal site — pure HTML, CSS, and vanilla JS. No frameworks, no build
    ---
    title: My New Post
    date: 2026-01-01
-   tags:
    ---
    Post content here...
    ```
