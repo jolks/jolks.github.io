@@ -1,7 +1,3 @@
----
-title: How to Explain Decision Tree Prediction
-date: 2019-07-15 14:15:06
----
 Decision Tree is a white box model because it is intuitive to interpret why the model gives output or prediction from the inputs. It is also a Symbolic AI method in which it provides "symbolic" (human-readable) representations of logic or rule.
 
 Using Iris flower dataset, we build a decision tree classifier to classify input of 4 features, sepal length (cm), sepal width (cm), petal length (cm), and petal width (cm) into 3 classes of Iris flower species consisting of `setosa`, `versicolor` and `virginica`.

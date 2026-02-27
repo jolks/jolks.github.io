@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jupyter, IPython, Colab Quick Help and Autocomplete &mdash; John Lau</title>
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Jupyter, IPython, Colab Quick Help and Autocomplete">
+    <meta property="og:url" content="https://laujohn.com/posts/jupyter-ipython-colab-quick-help-and-autocomplete.html">
+    <meta property="og:site_name" content="John Lau">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:author" content="John Lau">
+    <meta property="article:published_time" content="2019-05-04">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark-dimmed.min.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9M5XVHLNDT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9M5XVHLNDT');
+    </script>
+</head>
+<body>
+    <div class="side-bg" aria-hidden="true"></div>
+    <div class="container">
+
+        <article>
+            <header class="article-header fade-in">
+                <a class="back" href="/">&larr; Home</a>
+                <div class="article-date">2019-05-04</div>
+                <h1>Jupyter, IPython, Colab Quick Help and Autocomplete</h1>
+            </header>
+
+            <div class="article-body fade-in" id="article-body"></div>
+        </article>
+
+        <footer class="site-footer fade-in">
+            <p>&copy; 2018 John Lau</p>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/scala.min.js"></script>
+    <script>
+    (function () {
+      var slug = window.location.pathname.replace('/posts/', '').replace('.html', '');
+      fetch('/posts/' + encodeURIComponent(slug) + '.md')
+        .then(function (res) {
+          if (!res.ok) throw new Error('Not found');
+          return res.text();
+        })
+        .then(function (body) {
+          document.getElementById('article-body').innerHTML = marked.parse(body);
+          document.querySelectorAll('pre code').forEach(function (block) {
+            hljs.highlightElement(block);
+          });
+        })
+        .catch(function () {
+          document.getElementById('article-body').innerHTML = '<p>Could not load the post. <a href="/">Go home</a>.</p>';
+        });
+    })();
+    </script>
+</body>
+</html>

@@ -97,7 +97,7 @@
             ul.innerHTML = slice.map(function (p) {
               return '<li>'
                 + '<span class="date">' + p.date + '</span>'
-                + '<a class="title" href="/post.html?slug=' + p.slug + '">' + p.title + '</a>'
+                + '<a class="title" href="/posts/' + p.slug + '.html">' + p.title + '</a>'
                 + '</li>';
             }).join('');
 

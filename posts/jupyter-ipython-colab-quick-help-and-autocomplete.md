@@ -1,8 +1,3 @@
----
-title: 'Jupyter, IPython, Colab Quick Help and Autocomplete'
-date: 2019-05-04 06:28:07
----
-
 How to autocomplete and quickly access help or documentation in Python?
 
 For interactive shell, you can use IPython.

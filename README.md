@@ -4,25 +4,20 @@ Static personal site — pure HTML, CSS, and vanilla JS. No frameworks, no build
 
 ### Structure
 * `index.html` — landing page
-* `post.html` — blog post template (renders Markdown client-side via [marked](https://github.com/markedjs/marked))
-* `posts/` — blog posts as Markdown files with YAML front matter
+* `post.html` — redirects old `?slug=` URLs to `/posts/<slug>.html`
+* `posts/` — blog posts as Markdown files, plus generated HTML pages with OG meta tags
+* `build.py` — generates `posts/<slug>.html` from `posts/posts.json`
 * `css/style.css` — single stylesheet
 * `images/` — static assets
 * `sandbox/` — misc test code
 
 ### Adding a new blog post
-1. Create `posts/my-new-post.md` with front matter:
-   ```
-   ---
-   title: My New Post
-   date: 2026-01-01
-   ---
-   Post content here...
-   ```
-2. Add an entry to `posts/posts.json` (newest-first):
+1. Add an entry to `posts/posts.json` (newest-first):
    ```json
    { "slug": "my-new-post", "title": "My New Post", "date": "2026-01-01" }
    ```
+2. Create `posts/my-new-post.md` (no front matter needed — metadata lives in `posts.json`)
+3. Run `python3 build.py` to generate the HTML page with OG meta tags
 
 ### Local development
 ```sh

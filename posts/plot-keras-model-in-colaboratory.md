@@ -1,8 +1,3 @@
----
-title: Plot Keras Model in Colaboratory
-date: 2018-09-24 14:57:32
----
-
 Google Colaboratory or in short, Colab provides sufficiently powerful platform to run machine learning projects on Jupyter Notebook. The best thing is we can use NVIDIA Tesla K80 GPU for free! However there are some [caveats](https://research.google.com/colaboratory/faq.html).
 
 <hr/>

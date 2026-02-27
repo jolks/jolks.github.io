@@ -1,10 +1,4 @@
 ---
-title: Apache Spark Web UI on Amazon EMR
-date: 2018-09-22 20:19:46
----
-
-
----
 **Update (2018 November 30):** Starting from `emr-5.18.0`, we can access the Spark Web UI through Spark History Server > Show incomplete applications > Click an App ID. An URL example,
 
 http://ec2-54-64-51-35.ap-northeast-1.compute.amazonaws.com:18080/history/application_1543543990440_0001/jobs/

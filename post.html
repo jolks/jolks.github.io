@@ -2,128 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>John Lau</title>
-
-    <meta property="og:type" content="article">
-    <meta property="og:site_name" content="John Lau">
-    <meta property="og:locale" content="en_US">
-    <meta property="article:author" content="John Lau">
-    <meta name="twitter:card" content="summary">
-
-    <link rel="shortcut icon" href="/images/favicon.ico">
-    <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark-dimmed.min.css">
-
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9M5XVHLNDT"></script>
+    <title>Redirecting&hellip;</title>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-9M5XVHLNDT');
+    (function () {
+      var slug = new URLSearchParams(window.location.search).get('slug');
+      if (slug) {
+        window.location.replace('/posts/' + encodeURIComponent(slug) + '.html');
+      } else {
+        window.location.replace('/');
+      }
+    })();
     </script>
 </head>
 <body>
-    <div class="side-bg" aria-hidden="true"></div>
-    <div class="container">
-
-        <article>
-            <header class="article-header fade-in">
-                <a class="back" href="/">&larr; Home</a>
-                <div class="article-date" id="article-date"></div>
-                <h1 id="article-title">Loading&hellip;</h1>
-            </header>
-
-            <div class="article-body fade-in" id="article-body"></div>
-        </article>
-
-        <footer class="site-footer fade-in">
-            <p>&copy; 2018 John Lau</p>
-        </footer>
-
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/scala.min.js"></script>
-    <script>
-    (function () {
-      const params = new URLSearchParams(window.location.search);
-      const slug = params.get('slug');
-
-      if (!slug) {
-        document.getElementById('article-title').textContent = 'Post not found';
-        document.getElementById('article-body').innerHTML = '<p>No slug specified. <a href="/">Go home</a>.</p>';
-        return;
-      }
-
-      fetch('/posts/' + encodeURIComponent(slug) + '.md')
-        .then(function (res) {
-          if (!res.ok) throw new Error('Not found');
-          return res.text();
-        })
-        .then(function (text) {
-          // Parse front matter
-          var title = slug;
-          var date = '';
-          var body = text;
-
-          if (text.startsWith('---')) {
-            var end = text.indexOf('---', 3);
-            if (end !== -1) {
-              var frontMatter = text.substring(3, end).trim();
-              body = text.substring(end + 3).trim();
-
-              frontMatter.split('\n').forEach(function (line) {
-                var sep = line.indexOf(':');
-                if (sep === -1) return;
-                var key = line.substring(0, sep).trim();
-                var val = line.substring(sep + 1).trim();
-                // Strip surrounding quotes
-                if ((val.startsWith("'") && val.endsWith("'")) ||
-                    (val.startsWith('"') && val.endsWith('"'))) {
-                  val = val.substring(1, val.length - 1);
-                }
-                if (key === 'title') title = val;
-                if (key === 'date') date = val.substring(0, 10);
-              });
-            }
-          }
-
-          document.getElementById('article-title').textContent = title;
-          document.getElementById('article-date').textContent = date;
-          document.title = title + ' — John Lau';
-
-          // Update OG meta tags
-          var ogTitle = document.querySelector('meta[property="og:title"]');
-          if (!ogTitle) {
-            ogTitle = document.createElement('meta');
-            ogTitle.setAttribute('property', 'og:title');
-            document.head.appendChild(ogTitle);
-          }
-          ogTitle.setAttribute('content', title);
-
-          // Render markdown
-          document.getElementById('article-body').innerHTML = marked.parse(body);
-
-          // Syntax highlighting
-          document.querySelectorAll('pre code').forEach(function (block) {
-            hljs.highlightElement(block);
-          });
-        })
-        .catch(function () {
-          document.getElementById('article-title').textContent = 'Post not found';
-          document.getElementById('article-body').innerHTML = '<p>Could not load the post. <a href="/">Go home</a>.</p>';
-        });
-    })();
-    </script>
+    <p>Redirecting&hellip;</p>
 </body>
 </html>
